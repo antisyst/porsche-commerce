@@ -1,0 +1,147 @@
+:root {
+  --var-color-black: #000;
+  --var-color-white: #ffff;
+  --var-color-card: #12121275;
+  --var-color-primary: #ffffff85;
+  --var-color-hover: rgba(255, 255, 255, 0.1);
+  --var-color-border: #121212;
+}
+html {
+  user-select: none;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: var(--var-color-black);
+  filter: brightness(1.1);
+  user-select: none;
+}
+
+a {
+  user-select: none;
+}
+#ham-menu {
+  display: none;
+}
+nav ul.active {
+  left: 0;
+}
+@media only screen and (max-width: 991px) {
+  a {
+    cursor: none;
+  }
+  header {
+    padding: 2.2rem 5rem;
+  }
+}
+.navbar.scrolled {
+  transition: all 0.3s ease-out;
+  background-color: rgba(0, 0, 0, 0.4 );
+  backdrop-filter: blur(20px);
+
+  #logo {
+    svg {
+        width: 110px;
+        height: 70px;
+    }
+}
+}
+.ShowkrtInt {
+  background: url(../images/showcase.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header {
+  position: fixed;
+  width: 100%;
+  padding: 3rem 5rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+@media only screen and (max-width: 800px) {z
+  a {
+    cursor: none;
+  }
+}
+
+h1 {
+  font-size: 4rem;
+}
+#ham-menu {
+  display: none;
+}
+nav ul.active {
+  left: 0;
+}
+@media only screen and (max-width: 991px) {
+
+  header {
+    padding: 2.2rem 5rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 50%;
+  }
+  #ham-menu {
+    display: block;
+    color: #ffffff;
+  }
+  nav a#logo,
+  #ham-menu {
+    font-size: 3.2rem;
+  }
+  nav ul {
+    background-color: black;
+    position: fixed;
+    left: -100vw;
+    top: 73.6px;
+    width: 100vw;
+    height: calc(100vh - 73.6px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: 1s;
+    gap: 0;
+  }
+}
+@media only screen and (max-width: 575px) {
+
+  header {
+    padding: 2rem 3rem;
+  }
+  nav ul {
+    top: 0;
+    height: 100vh;
+  }
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: none; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: none; 
+}
